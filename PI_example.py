@@ -69,7 +69,7 @@ for i in range(len(f2)):
     R_IFO[i] = 8*pi*Q*P / (M * (2*pi*f2[i])**2 * constants.c * lamd) * (Gn_real * Bmn**2)
 
 pylab.semilogy(f1/1e3,R_FP,'blue',marker='.',markersize=5,markeredgecolor=None,label='aLIGO FPC')
-pylab.semilogy(f2/1e3,R_IFO,'red',marker='.',markersize=5,markeredgecolor=None,label='aLIGO, O1/O2, as-built')
+pylab.semilogy(f2/1e3,R_IFO,'green',marker='.',markersize=5,markeredgecolor=None,label='aLIGO, O1/O2, as-built')
 
 pylab.xlim(47.5,47.8)
 pylab.ylim(1e-2,1e2)
