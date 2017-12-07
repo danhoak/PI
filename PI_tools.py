@@ -52,9 +52,9 @@ def calc_optical_TF(w,order,IFO,jitter=array([0,0,1.0])):
         R2 = 2241.54 + jitter[0]
         g1 = 1 - L/R1
         g2 = 1 - L/R2
-        phi = arccos(-1*sqrt(g1*gN))
+        phi = arccos(-1*sqrt(g1*g2))
 
-        print phi
+        #print phi
 
     if IFO=='V':
         # Virgo numbers
@@ -68,9 +68,9 @@ def calc_optical_TF(w,order,IFO,jitter=array([0,0,1.0])):
         R2 = 1695.5 + jitter[0]
         g1 = 1 - L/R1
         g2 = 1 - L/R2
-        phi = arccos(-1*sqrt(g1*gN))
+        phi = arccos(-1*sqrt(g1*g2))
 
-        print phi
+        #print phi
 
     tA = sqrt(TA)
     tB = sqrt(TB)
